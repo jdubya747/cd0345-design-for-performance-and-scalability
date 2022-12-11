@@ -1,0 +1,25 @@
+﻿Estimate summary,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,
+0,6365.14,76381.68,USD,,,,,
+,,* Includes upfront cost,,,,,,
+,Savings Realized:,,,,,,,
+,"I have the web server and the application server as Reserved Instances. However, for the 2nd instance of each these I have as ""On Demand"" instances. They will be available for traffice spikes but will not be incurring cost to sit idle.",,,,,,,
+,,,,,,,,
+Detailed Estimate,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),CloudFront Scenario 1,Amazon CloudFront,0,102.16,1225.92,USD,"Data transfer out to internet (1024 GB per month), Data transfer out to origin (500 GB per month), Number of requests (HTTPS) (5120000 per month)"
+My Estimate,US East (N. Virginia),,VPN Connection,0,0,0,USD,Working days per month (22)
+My Estimate,US East (N. Virginia),,Network Address Translation (NAT) Gateway,0,100.35,1204.2,USD,Number of NAT Gateways (1)
+My Estimate,US East (N. Virginia),,Gateway Load Balancer,0,11.56,138.72,USD,"Number of Availability Zones that Gateway Load Balancer is deployed to (1), Number of Gateway Load Balancer Endpoints (1), Average number of new connections/flows (500 per second), Average connection/flow duration (10 seconds)"
+My Estimate,US East (N. Virginia),Web and Application load balancers,Application Load Balancer,0,266.45,3197.4,USD,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),RDS MySQL Multi-AZ,Amazon RDS for MySQL,0,1474.2,17690.4,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (30 GB), Quantity (1), Instance type (db.r3.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+My Estimate,US East (N. Virginia),RDS MySQL Read Replica 1,Amazon RDS for MySQL,0,970.5,11646,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (30 GB), Quantity (1), Instance type (db.m2.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+My Estimate,US East (N. Virginia),Reserved EC2 App Server AZ2,Amazon EC2,0,1618.85,19426.2,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Internet (100 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (50 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 2, Peak: 4, Duration of peak: 8 Hr 30 Min)), Advance EC2 instance (x2gd.large), Pricing strategy (All Reserved 1 Year  None upfront), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+My Estimate,US East (N. Virginia),Reserved EC2 Web Server AZ1,Amazon EC2,0,1618.85,19426.2,USD,"Operating system (Linux), Storage amount (30 GB), DT Inbound: Internet (100 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (50 TB per month), Workload (Daily, (Workload days: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Baseline: 2, Peak: 4, Duration of peak: 8 Hr 30 Min)), Advance EC2 instance (x2gd.large), Pricing strategy (All Reserved 1 Year  None upfront), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB)"
+My Estimate,US East (N. Virginia),On Demand EC2 App Server AZ2,Amazon EC2,0,101.11,1213.32,USD,"Operating system (Linux), Quantity (1), Pricing strategy (On-Demand Instances), Storage amount (30 GB), Instance type (t4g.xlarge)"
+My Estimate,US East (N. Virginia),On Demand EC2 Web Server AZ2,Amazon EC2,0,101.11,1213.32,USD,"Operating system (Linux), Quantity (1), Pricing strategy (On-Demand Instances), Storage amount (30 GB), Instance type (t4g.xlarge)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
